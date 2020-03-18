@@ -1,0 +1,34 @@
+body {
+	min-width: 320px;
+	font-family: "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 90px;
+	padding: 0;
+	background: #ffffff;
+}
+
+.links {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.link {
+	background: linear-gradient(90deg, #1400ff 0%, #00feff 100%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	color: #1400ff;
+}
+
+.link:hover {
+	background: linear-gradient(270deg, #1400ff 0%, #00feff 100%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	color: #00feff;
+}
