@@ -19,14 +19,26 @@ body {
 	margin: 0;
 }
 
-.link {
+.link a {
+	position: relative;
 	background: linear-gradient(90deg, #1400ff 0%, #00feff 100%);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	color: #1400ff;
+	text-decoration: none;
 }
 
-.link:hover {
+.link a:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: none;
+    content: attr(data-text);
+    text-shadow: 5px 1px 0 black;
+    z-index: -1;
+}
+
+.link a:hover {
 	background: linear-gradient(270deg, #1400ff 0%, #00feff 100%);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
