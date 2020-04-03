@@ -378,7 +378,7 @@ main {
 	margin: -140px 0 0 0;
 	border-radius: 50%;
 	overflow: hidden;
-	animation: scale-in-center 0.5s 1s ease-in both;
+	animation: scale-in-center 0.5s ease-in both;
 }
 
 .main__image-wrapper:hover:before {
