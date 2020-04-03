@@ -55,24 +55,24 @@ url: "https://formfor.site/send/DFRJPHUPfRgZ41Gc25T1bJ7HVFq503",
 data: str,
 success: function(msg) {
 if(msg == 'OK') {
-
+  
 } else {
 
 }
-
+$(".contacts__form-success").addClass("contacts__form-success--show")
 }
 });
 return false;
 });
 });
-
+/*
 sendForm.onclick = function() {
   successMessage.classList.add('contacts__form-success--show');
   for(let formField of formFields) {
     formField.value = '';
   }
 }
-
+*/
 successToggle.onclick = function() {
   successMessage.classList.remove('contacts__form-success--show');
 }
