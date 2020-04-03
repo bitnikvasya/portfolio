@@ -3,13 +3,141 @@
    <head>
       <meta charset="utf-8">
       <title>Portfolio</title>
-      <link href="style.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap&subset=cyrillic" rel="stylesheet">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/dfe9db6a8b.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
    </head>
    <body>
-      <ul class="links">
-         <li class="link"><a data-text="MISHKA" href="https://bitnikvasya.github.io/mishka/" target="_blank">MISHKA</a></li>
-         <li class="link"><a data-text="PEREEZD" href="https://bitnikvasya.github.io/pereezd/" target="_blank">PEREEZD</a></li>
-         <li class="link"><a data-text="DEVICE" href="https://bitnikvasya.github.io/device/" target="_blank">DEVICE</a></li>
-      </ul>
+      <header class="header">
+         <nav class="navigation">
+            <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="navigation__list navigation__list--closed">
+               <li class="navigation__list-item"><a href="#">Обо мне</a></li>
+               <li class="navigation__list-item"><a href="#">Навыки и технологии</a></li>
+               <li class="navigation__list-item"><a href="#">Проекты</a></li>
+               <li class="navigation__list-item"><a href="#">Контакты</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="main">
+            <h1 class="main__title"><span>&lt;b&gt;</span>Привет<span>&lt;/b&gt;</span><br><span>Я Василий Яковенко,</span><br>HTML-верстальщик</h1>
+            <a class="main__image-wrapper" href="https://t.me/Vasily_Ya" target="_blank">
+               <img class="main__image" src="img/main.png" width="300" height="300" alt="Василий Яковенко">
+            </a>
+         </section>
+         <div class="section__wrapper">
+            <div class="circle"></div>
+            <section class="about">
+               <h2 class="about__title section__title"><обо мне></h2>
+               <p class="about__text">Мне 37 лет, женат, живу в Ростове-на-Дону. За плечами два высших образования (экономическое и юридическое) и десятилетний стаж в банковской сфере. Пару лет назад решил сменить профессию, уйти в IT. Успешно прошел интенсивные курсы профессионального HTML и CSS, основы JavaScript от <a href="https://htmlacademy.ru/" target="_blank">HTML academy</a>.</p> 
+               <p class="about__text">Cейчас парт-тайм работаю разработчиком сайтов на Wordpress, параллельно изучаю JavaScript, React, Vue.js и другие технологии, практикуюсь в верстке. Мне интересно направление веб-разработки, горю желанием развиваться в нем и совершенствовать свои навыки. Порядочен, ответственен, пунктуален, креативен, внимателен к деталям.</p>
+               <a class="about__button button" href="https://hh.ru/resume/8b58bb4dff07abdee40039ed1f725074623150" target="_blank">Резюме</a>
+            </section>
+            <section class="skills">
+               <h2 class="skills__title section__title"><навыки и технологии></h2>
+               <div class="skills__lists">
+                  <ul class="skills__language-list">
+                     <li class="skills__language-item">HTML5</li>
+                     <li class="skills__language-item">CSS3</li>
+                     <li class="skills__language-item">JavaScript</li>
+                  </ul>
+                  <ul class="skills__tehnology-list">
+                     <li class="skills__tehnology-item">Bootstrap</li>
+                     <li class="skills__tehnology-item">Less/Sass</li>
+                     <li class="skills__tehnology-item">Webpack/Gulp</li>
+                     <li class="skills__tehnology-item">Git/GitHub</li>
+                     <li class="skills__tehnology-item">Figma/Photoshop</li>
+                     <li class="skills__tehnology-item">Wordpress</li>
+                  </ul>
+                  <ul class="skills__skills-list">
+                     <li class="skills__skills-item">методология БЭМ</li>
+                     <li class="skills__skills-item">семантическая и доступная верстка</li>
+                     <li class="skills__skills-item">адаптивная и резиновая кроссбраузерная верстка</li>
+                     <li class="skills__skills-item">адаптивная и ретиновая графика</li>
+                     <li class="skills__skills-item">pixel perfect</li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+         <section class="projects">
+            <h2 class="projects__title section__title"><проекты></h2>
+            <div class="projects__wrapper">
+               <div class="projects__wrapper-left">
+                  <a class="projects__item" href="https://bitnikvasya.github.io/pereezd/" target="_blank">
+                     <img src="img/pereezd.jpg" alt="Домашний переезд">
+                     <div class="projects__item-description">
+                        <h3>Домашний переезд</h3>
+                        <p>корпоративный сайт</p>
+                        <p>Адаптивная верстка. Реализованы страницы «Главная», «Прайс», модальные окна по клику на «Обратная связь», «Оставить заявку».</p>
+                     </div>
+                  </a>
+                  <a class="projects__item" href="https://bitnikvasya.github.io/device/" target="_blank">
+                     <img src="img/device.jpg" alt="Device">
+                     <div class="projects__item-description">
+                        <h3>Device</h3>
+                        <p>интернет-магазин</p>
+                        <p>Статическая верстка. Реализованы страницы «Главная», «Каталог товаров», модальные окна по клику на «Напишите нам» и карту.</p>
+                     </div>
+                  </a>
+                  <a class="projects__item" href="https://bitnikvasya.github.io/mishka/" target="_blank">
+                     <img src="img/mishka.jpg" alt="Mishka">
+                     <div class="projects__item-description">
+                        <h3>Mishka</h3>
+                        <p>интернет-магазин</p>
+                        <p>Адаптивная верстка. Реализованы страницы «Главная», «Каталог товаров», модальное окно по клику на «Заказать», иконку «Корзина».</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="projects__wrapper-right">
+                  <a class="projects__item" href="https://beogradjanin.ru/" target="_blank">
+                     <img src="img/beogradjanin.jpg" alt="Beogradjanin">
+                     <div class="projects__item-description">
+                        <h3>БЕОГРАЂАНИН</h3>
+                        <p>блог</p>
+                        <p>Доработка Wordpress-темы, контент, API.</p>
+                     </div>
+                  </a>
+                  <a class="projects__item" href="https://naturalserbia.ru/" target="_blank">
+                     <img src="img/natural-serbia.jpg" alt="Natural Serbia">
+                     <div class="projects__item-description">
+                        <h3>Natural Serbia</h3>
+                        <p>интернет-магазин</p>
+                        <p>Доработка Wordpress-темы, контент, API.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="contacts">
+            <h2 class="contacts__title section__title"><контакты></h2>
+            <div class="contacts__wrapper">
+               <form class="contacts__form" action="" method="post">
+                  <label for="name">Ваше имя</label>
+                  <input class="contacts__form-input" id="name" type="text" name="name" value="" placeholder="Имя" required>
+                  <label for="email">Ваш e-mail</label>
+                  <input class="contacts__form-input" id="email" type="email" name="email" value="" placeholder="email@example.com" required>
+                  <label for="text">Текст</label>
+                  <textarea class="contacts__form-input" id="text" name="text" placeholder="Напишите здесь ваш вопрос, пожелание, предложение, что угодно" required></textarea>
+                  <button class="contacts__form-button button" type="submit">Отправить сообщение</button>
+                  <p class="contacts__form-success">Сообщение отправлено, я отвечу так быстро, как смогу
+                        <button class="contacts__form-success-toggle" type="button"><span class="visually-hidden">Закрыть</span></button>
+                  </p>
+                  <small>Нажимая на кнопку «Отправить сообщение», вы даете согласие на обработку своих персональных данных.</small>
+               </form>
+               <div class="contacts__icons">
+                  <a href="mailto:packedmess@gmail.com"><i class="fas fa-envelope"></i></a>
+                  <a href="https://www.facebook.com/vasily.yakovenko.1/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://t.me/Vasily_Ya" target="_blank"><i class="fab fa-telegram"></i></a>
+                  <a href="https://github.com/bitnikvasya" target="_blank"><i class="fab fa-github"></i></a>
+               </div>
+            </div>
+         </section>
+      </main>
+      <script src="js/main.js"></script>
    </body>
 </html>
