@@ -106,3 +106,13 @@ window.onscroll = function () {
     }
 
 };
+
+let projectsItems = document.querySelectorAll('.projects__item');
+
+for (let projectsItem of projectsItems) {
+  let projectsItemDescription = projectsItem.querySelector('.projects__item-description');
+  projectsItem.onclick = function () {
+    projectsItemDescription.classList.toggle('projects__item-description--show');
+    
+  };
+};
