@@ -675,32 +675,32 @@ main {
 	}
 
 	.projects__wrapper-left .projects__item:first-child {
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 	}
 
 	.projects__wrapper-right .projects__item:first-child {
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 	}
 
 	.projects__wrapper-left .projects__item:not(:first-child),
 	.projects__wrapper-right .projects__item {
-		width: calc(50% - 10px);
+		width: calc(50% - 20px);
 	}
 
 	.projects__wrapper-left .projects__item:nth-child(2) {
-		margin: 10px 10px 10px 0;
+		margin: 20px 20px 20px 0;
 	}
 
 	.projects__wrapper-left .projects__item:nth-child(3) {
-		margin: 10px 0 10px 10px;
+		margin: 20px 0 20px 20px;
 	}
 
 	.projects__wrapper-right .projects__item:first-child {
-		margin: 10px 10px 0 0;
+		margin: 20px 20px 0 0;
 	}
 
 	.projects__wrapper-right .projects__item:nth-child(2) {
-		margin: 10px 0 0 10px;
+		margin: 20px 0 0 20px;
 	}
 
 	.projects__item-description {
