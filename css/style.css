@@ -454,27 +454,24 @@ main {
 /*---ABOUT---*/
 
 .section__wrapper {
-	background: url('../img/developer.svg') no-repeat;
+	background: url('../img/developer 2.svg') no-repeat;
 	background-position: right -150px bottom 0;
 	background-size: 1000px;
-	/*position: relative;
-	background: url('../img/img.svg') no-repeat;
-	background-position: right -200px bottom 0;
-	background-size: 1000px;*/
+	position: relative;
 }
 
-/*.circle {
+.circle {
 	position: absolute;
-	bottom: 723px;
-	right: 371px;
+	bottom: 620px;
+	right: 250px;
 	transform: translate(-50%, 50%);
 	width: 40px; 
 	height: 40px;
-	background: var(--main-color);
+	background: #ffffff;
 	border-radius: 50%;
 	animation: blink 10s infinite;
-	box-shadow: 118px 0 0 0 var(--main-color);
-}*/
+	box-shadow: 70px 0 0 0 #ffffff;
+}
 
 .about {
 	padding: 0 70px;
