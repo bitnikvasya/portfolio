@@ -13,6 +13,7 @@
    </head>
    <body>
       <header class="header">
+         <a id="main" name="main"></a>
          <nav class="navigation">
             <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="navigation__list navigation__list--closed">
@@ -72,7 +73,9 @@
             <div class="projects__wrapper">
                <div class="projects__wrapper-left">
                   <a class="projects__item" href="https://bitnikvasya.github.io/pereezd/" target="_blank">
-                     <img src="img/pereezd.jpg" alt="Домашний переезд">
+                     <picture>
+                        <img src="img/pereezd.jpg" alt="Домашний переезд">
+                     </picture>
                      <div class="projects__item-description">
                         <h3>Домашний переезд</h3>
                         <p>корпоративный сайт</p>
@@ -80,7 +83,10 @@
                      </div>
                   </a>
                   <a class="projects__item" href="https://bitnikvasya.github.io/device/" target="_blank">
-                     <img src="img/device.jpg" alt="Device">
+                     <picture>
+                        <source media="(max-width: 1200px)" srcset="img/device-2.jpg">
+                        <img src="img/device.jpg" alt="Device">
+                     </picture>
                      <div class="projects__item-description">
                         <h3>Device</h3>
                         <p>интернет-магазин</p>
@@ -88,7 +94,10 @@
                      </div>
                   </a>
                   <a class="projects__item" href="https://bitnikvasya.github.io/mishka/" target="_blank">
-                     <img src="img/mishka.jpg" alt="Mishka">
+                     <picture>
+                        <source media="(max-width: 1200px)" srcset="img/mishka-2.jpg">
+                        <img src="img/mishka.jpg" alt="Mishka">
+                     </picture>
                      <div class="projects__item-description">
                         <h3>Mishka</h3>
                         <p>интернет-магазин</p>
@@ -98,7 +107,10 @@
                </div>
                <div class="projects__wrapper-right">
                   <a class="projects__item" href="https://beogradjanin.ru/" target="_blank">
-                     <img src="img/beogradjanin.jpg" alt="Beogradjanin">
+                     <picture>
+                        <source media="(max-width: 1200px)" srcset="img/beogradjanin-2.jpg">
+                        <img src="img/beogradjanin.jpg" alt="Beogradjanin">
+                     </picture>
                      <div class="projects__item-description">
                         <h3>БЕОГРАЂАНИН</h3>
                         <p>блог</p>
@@ -106,7 +118,9 @@
                      </div>
                   </a>
                   <a class="projects__item" href="https://naturalserbia.ru/" target="_blank">
-                     <img src="img/natural-serbia.jpg" alt="Natural Serbia">
+                     <picture>
+                        <img src="img/natural-serbia.jpg" alt="Natural Serbia">
+                     </picture>
                      <div class="projects__item-description">
                         <h3>Natural Serbia</h3>
                         <p>интернет-магазин</p>
@@ -128,7 +142,7 @@
                   <label for="text">Текст</label>
                   <textarea class="contacts__form-input" id="text" name="text" placeholder="Напишите здесь ваш вопрос, пожелание, предложение, что угодно" required></textarea>
                   <button class="contacts__form-button button" type="submit">Отправить сообщение</button>
-                  <p class="contacts__form-success">Сообщение отправлено, я отвечу так быстро, как смогу
+                  <p class="contacts__form-success">Сообщение отправлено. Я отвечу так быстро, как смогу.
                         <button class="contacts__form-success-toggle" type="button"><span class="visually-hidden">Закрыть</span></button>
                   </p>
                   <small>Нажимая на кнопку «Отправить сообщение», вы даете согласие на обработку своих персональных данных.</small>
@@ -141,6 +155,7 @@
                </div>
             </div>
          </section>
+         <button class="up-button" type="button"><a href="#main">Наверх</a></button>
       </main>
       <script src="js/main.js"></script>
    </body>

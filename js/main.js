@@ -57,7 +57,7 @@ success: function(msg) {
 if(msg == 'OK') {
   
 } else {
-
+  
 }
 $(".contacts__form-success").addClass("contacts__form-success--show")
 }
@@ -94,3 +94,15 @@ for (let anchor of anchors) {
   })
 }*/
 
+/*https://formfor.site/send/DFRJPHUPfRgZ41Gc25T1bJ7HVFq503*/
+
+let upButton = document.querySelector('.up-button');
+
+window.onscroll = function () {
+  if (window.pageYOffset > 700) {
+    upButton.classList.add('up-button--show');
+  } else {
+    upButton.classList.remove('up-button--show');
+    }
+
+};
