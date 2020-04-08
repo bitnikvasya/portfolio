@@ -10,10 +10,7 @@ let successToggle = document.querySelector('.contacts__form-success-toggle');
 let navToggle = function(x, y, z) {
   y.onclick = function(a) {
   a.preventDefault();
- // y.classList.toggle('navigation__toggle--close');
- // y.classList.toggle('navigation__toggle--open');
- // x.classList.toggle('navigation__list--closed');
- // x.classList.toggle('navigation__list--opened');
+
   z.classList.toggle('header--background')
 
   if (y.classList.contains('navigation__toggle--open')) {
@@ -65,36 +62,11 @@ $(".contacts__form-success").addClass("contacts__form-success--show")
 return false;
 });
 });
-/*
-sendForm.onclick = function() {
-  successMessage.classList.add('contacts__form-success--show');
-  for(let formField of formFields) {
-    formField.value = '';
-  }
-}
-*/
+
 successToggle.onclick = function() {
   successMessage.classList.remove('contacts__form-success--show');
 }
 
-/*let anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    let blockID = anchor.getAttribute('href').substring(1)
-
-    console.log(blockID)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}*/
-
-/*https://formfor.site/send/DFRJPHUPfRgZ41Gc25T1bJ7HVFq503*/
 
 let upButton = document.querySelector('.up-button');
 
@@ -107,12 +79,21 @@ window.onscroll = function () {
 
 };
 
+let projectsItemDescriptions = document.querySelectorAll('.projects__item-description');
 let projectsItems = document.querySelectorAll('.projects__item');
 
 for (let projectsItem of projectsItems) {
-  let projectsItemDescription = projectsItem.querySelector('.projects__item-description');
-  projectsItem.onclick = function () {
-    projectsItemDescription.classList.toggle('projects__item-description--show');
-    
+  let itemDescription = projectsItem.querySelector('.projects__item-description');
+  projectsItem.onclick = function (event) {
+    event.stopPropagation();
+      itemDescription.classList.toggle('projects__item-description--show');
   };
 };
+
+document.onclick = function (e) {
+  for (let projectsItemDescription of projectsItemDescriptions) {
+    
+      projectsItemDescription.classList.remove('projects__item-description--show');
+    
+  }
+}
