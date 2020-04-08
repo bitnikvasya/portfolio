@@ -11,9 +11,8 @@
       <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
       <meta name="viewport" content="width=device-width,initial-scale=1">
    </head>
-   <body>
+   <body id="main">
       <header class="header">
-         <a id="main" name="main"></a>
          <nav class="navigation">
             <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="navigation__list navigation__list--closed">
@@ -25,7 +24,7 @@
          </nav>
       </header>
       <main>
-         <section class="main">
+         <section class="main section">
             <h1 class="main__title"><span>&lt;b&gt;</span>Привет<span>&lt;/b&gt;</span><br><span>Я Василий Яковенко,</span><br>HTML-верстальщик</h1>
             <a class="main__image-wrapper" href="https://t.me/Vasily_Ya" target="_blank">
                <img class="main__image" src="img/main.png" width="300" height="300" alt="Василий Яковенко">
@@ -33,15 +32,13 @@
          </section>
          <div class="section__wrapper">
             <div class="circle"></div>
-            <section class="about">
-               <a id="about" name="about"></a>
+            <section class="section about" id="about" >
                <h2 class="about__title section__title"><обо мне></h2>
                <p class="about__text">Мне 37 лет, женат, живу в Ростове-на-Дону. За плечами два высших образования (экономическое и юридическое) и десятилетний стаж в банковской сфере. Пару лет назад решил сменить профессию, уйти в IT. Успешно прошел интенсивные курсы профессионального HTML и CSS, основы JavaScript от <a href="https://htmlacademy.ru/" target="_blank">HTML academy</a>.</p> 
                <p class="about__text">Cейчас парт-тайм работаю разработчиком сайтов на Wordpress, параллельно изучаю JavaScript, React, Vue.js и другие технологии, практикуюсь в верстке. Мне интересно направление веб-разработки, горю желанием развиваться в нем и совершенствовать свои навыки. Порядочен, ответственен, пунктуален, креативен, внимателен к деталям.</p>
                <a class="about__button button" href="https://hh.ru/resume/8b58bb4dff07abdee40039ed1f725074623150" target="_blank">Резюме</a>
             </section>
-            <section class="skills">
-               <a id="skills" name="skills"></a>
+            <section class="section skills" id="skills">
                <h2 class="skills__title section__title"><навыки и технологии></h2>
                <div class="skills__lists">
                   <ul class="skills__language-list">
@@ -67,13 +64,13 @@
                </div>
             </section>
          </div>
-         <section class="projects">
-            <a id="projects" name="projects"></a>
+         <section class="section projects" id="projects">
             <h2 class="projects__title section__title"><проекты></h2>
             <div class="projects__wrapper">
                <div class="projects__wrapper-left">
                   <div class="projects__item">
                      <picture>
+                        <source media="(max-width: 1199px)" srcset="img/pereezd-2.jpg">
                         <img src="img/pereezd.jpg" alt="Домашний переезд">
                      </picture>
                      <a class="projects__item-description" href="https://bitnikvasya.github.io/pereezd/" target="_blank">
@@ -84,7 +81,7 @@
                   </div>
                   <div class="projects__item">
                      <picture>
-                        <source media="(max-width: 1200px)" srcset="img/device-2.jpg">
+                        <source media="(max-width: 1199px)" srcset="img/device-2.jpg">
                         <img src="img/device.jpg" alt="Device">
                      </picture>
                      <a class="projects__item-description" href="https://bitnikvasya.github.io/device/" target="_blank">
@@ -95,7 +92,7 @@
                   </div>
                   <div class="projects__item">
                      <picture>
-                        <source media="(max-width: 1200px)" srcset="img/mishka-2.jpg">
+                        <source media="(max-width: 1199px)" srcset="img/mishka-2.jpg">
                         <img src="img/mishka.jpg" alt="Mishka">
                      </picture>
                      <a class="projects__item-description" href="https://bitnikvasya.github.io/mishka/" target="_blank">
@@ -108,7 +105,7 @@
                <div class="projects__wrapper-right">
                   <div class="projects__item">
                      <picture>
-                        <source media="(max-width: 1200px)" srcset="img/beogradjanin-2.jpg">
+                        <source media="(max-width: 1199px)" srcset="img/beogradjanin-2.jpg">
                         <img src="img/beogradjanin.jpg" alt="Beogradjanin">
                      </picture>
                      <a class="projects__item-description" href="https://beogradjanin.ru/" target="_blank">
@@ -130,8 +127,7 @@
                </div>
             </div>
          </section>
-         <section class="contacts">
-            <a id="contacts" name="contacts"></a>
+         <section class="section contacts" id="contacts">
             <h2 class="contacts__title section__title"><контакты></h2>
             <p class="contacts__text">Вы можете связаться со мной, заполнив форму ниже, или другим удобным для вас способом.</p>
             <div class="contacts__wrapper">
@@ -158,6 +154,7 @@
          </section>
          <button class="up-button" type="button"><a href="#main">Наверх</a></button>
       </main>
+      <script src="js/jquery.js"></script>
       <script src="js/main.js"></script>
    </body>
 </html>
