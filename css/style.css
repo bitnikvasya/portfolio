@@ -705,7 +705,6 @@ main {
 .main__image-wrapper {
 	position: relative;
 	display: inline-block;
-	padding: 10px;
 	margin: -140px 0 0 0;
 	border-radius: 50%;
 	overflow: hidden;
@@ -1417,11 +1416,13 @@ main {
 	display: none;
 	position: fixed;
 	width: 20px;
+	color: #000000;
 	z-index: 1;
 	padding: 17px 0 0 0;
 	bottom: 20px;
 	right: 22px;
 	font-weight: 800;
+	line-height: 20px;
 	text-transform: uppercase;
 	text-align: center;
 	word-wrap: break-word;
@@ -1434,18 +1435,11 @@ main {
 	display: block;
 }
 
-.up-button a {
-	position: relative;
-	width: 20px;
-	padding: 17px 0 0 0;
-	color: #000000;
-}
-
-.up-button:hover a {
+.up-button:hover {
 	color: var(--main-color);
 }
 
-.up-button a:before {
+.up-button:before {
 	position: absolute;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -1457,7 +1451,7 @@ main {
 	border-bottom: 7px solid #000000;
 }
 
-.up-button:hover a:before {
+.up-button:hover:before {
 	border-bottom: 7px solid var(--main-color);
 }
 
