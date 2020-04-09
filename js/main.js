@@ -70,6 +70,9 @@ for (let projectsItem of projectsItems) {
     clearSection();
     itemDescription.classList.toggle('projects__item-description--show');
   };
+  itemDescription.onclick = function () {
+    itemDescription.classList.remove('projects__item-description--show');
+  };
 }
 
 document.onclick = function () {
