@@ -70,7 +70,8 @@ for (let projectsItem of projectsItems) {
     clearSection();
     itemDescription.classList.toggle('projects__item-description--show');
   };
-  itemDescription.onclick = function () {
+  itemDescription.onclick = function (event) {
+    event.stopPropagation();
     itemDescription.classList.remove('projects__item-description--show');
   };
 }
