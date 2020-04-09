@@ -1175,6 +1175,13 @@ main {
 	}
 }
 
+@media (max-width: 360px) {
+	.projects__item-description h3,
+	.projects__item-description p {
+		line-height: 24px;
+	}
+}
+
 /*---CONTACTS--*/
 
 .contacts {
