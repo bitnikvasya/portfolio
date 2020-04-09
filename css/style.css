@@ -1176,9 +1176,17 @@ main {
 }
 
 @media (max-width: 360px) {
+	.projects__item-description {
+		padding: 15px 20px;
+	}
+
 	.projects__item-description h3,
 	.projects__item-description p {
 		line-height: 24px;
+	}
+
+	.projects__item-description p {
+		margin: 0 0 10px 0;
 	}
 }
 
@@ -1201,13 +1209,14 @@ main {
 	        justify-content: space-between;
 }
 
-.contacts__form label {
-	display: block;
-}
-
 .contacts__form {
 	position: relative;
 	width: 66.6%;
+	-webkit-appearance: none;
+}
+
+.contacts__form label {
+	display: block;
 }
 
 .contacts__form input {
@@ -1218,6 +1227,7 @@ main {
 	border: 1px solid #000000;
 	-webkit-box-shadow: 4px -4px 0 #000000;
 	        box-shadow: 4px -4px 0 #000000;
+	-webkit-appearance: none;
 }
 
 .contacts__form textarea {
@@ -1230,6 +1240,7 @@ main {
 	-webkit-box-shadow: 4px -4px 0 #000000;
 	        box-shadow: 4px -4px 0 #000000;
 	resize: none;
+	-webkit-appearance: none;
 }
 
 .contacts__form input:valid:not(:placeholder-shown),
