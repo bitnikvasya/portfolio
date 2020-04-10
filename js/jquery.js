@@ -25,12 +25,7 @@ jQuery(function($) {
 
     const section = $('.section'),
           nav = $('.navigation'),
-          navHeight = nav.outerHeight(); // получаем высоту навигации 
-
-    // поворот экрана 
-   /* window.addEventListener('orientationchange', function () {
-        navHeight = nav.outerHeight();
-    }, false);*/
+          navHeight = nav.outerHeight();
 
     $(window).on('scroll', function () {
         const position = $(this).scrollTop();
