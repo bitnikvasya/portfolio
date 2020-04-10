@@ -459,8 +459,8 @@ a:hover {
 /*---HEADER---*/
 
 .header {
-	position: -webkit-sticky;
-	position: sticky;
+	position: -webkit-fixed;
+	position: fixed;
 	width: 100%;
 	max-width: 1600px;
 	margin: 0 auto;

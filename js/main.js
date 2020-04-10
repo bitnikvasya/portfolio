@@ -13,7 +13,7 @@ let projectsItemDescriptions = document.querySelectorAll('.projects__item-descri
 let navToggle = function(x, y, z) {
   y.onclick = function(a) {
   a.preventDefault();
-
+  
   z.classList.toggle('header--background')
 
   if (y.classList.contains('navigation__toggle--open')) {
@@ -59,7 +59,7 @@ window.onscroll = function () {
 let clearSection = function () {
   for (let projectsItemDescription of projectsItemDescriptions) {
     projectsItemDescription.classList.remove('projects__item-description--show');
-  }
+  };
 };
 
 for (let projectsItem of projectsItems) {
