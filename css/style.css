@@ -714,7 +714,7 @@ main {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url('../img/telegram-icon.png') center center no-repeat;
+	background: url('../img/telegram-icon.svg') center center no-repeat;
 	background-size: 50%;
 	z-index: 1;
 }
