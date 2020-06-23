@@ -506,6 +506,12 @@ a:hover {
 	        box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
 }
 
+.navigation__toggle--open:hover:before {
+	background-color: #FFAA00;
+	-webkit-box-shadow: 0 10px 0 0 #FFAA00, 0 20px 0 0 #FFAA00;
+	        box-shadow: 0 10px 0 0 #FFAA00, 0 20px 0 0 #FFAA00;
+}
+
 .navigation__toggle--close:before,
 .navigation__toggle--close:after {
 	position: absolute;
@@ -527,6 +533,11 @@ a:hover {
 	-webkit-transform: rotate(-45deg);
 	    -ms-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
+}
+
+.navigation__toggle--close:hover:before,
+.navigation__toggle--close:hover:after {
+	background-color: #FFAA00;
 }
 
 .animate-right-toggle {
@@ -705,14 +716,15 @@ main {
 	        animation: scale-in-center 0.5s ease-in both;
 }
 
-.main__image-wrapper:hover:before {
+.main__image-wrapper:hover:before,
+.main__image-wrapper:focus:before {
 	position: absolute;
 	content: '';
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url('../img/telegram-icon.svg') center center no-repeat;
+	background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 500 435' style='enable-background:new 0 0 500 435;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23ffffff;%7D%0A%3C/style%3E%3Cpath class='st0' d='M8.8,208.7l115.2,43l44.6,143.4c2.9,9.2,14.1,12.6,21.5,6.5l64.2-52.3c6.7-5.5,16.3-5.8,23.4-0.7l115.8,84.1 c8,5.8,19.3,1.4,21.3-8.2l84.9-408.2c2.2-10.5-8.2-19.3-18.2-15.4L8.7,183.3C-3,187.8-2.9,204.4,8.8,208.7L8.8,208.7z M161.4,228.9 L386.6,90.2c4-2.5,8.2,3,4.7,6.2L205.5,269.1c-6.5,6.1-10.7,14.2-11.9,23l-6.3,46.9c-0.8,6.3-9.6,6.9-11.4,0.8l-24.3-85.5 C148.8,244.6,152.8,234.2,161.4,228.9L161.4,228.9z M161.4,228.9'/%3E%3C/svg%3E") center center no-repeat;
 	background-size: 50%;
 	z-index: 1;
 }
@@ -721,7 +733,8 @@ main {
 	display: block;
 }
 
-.main__image-wrapper:hover .main__image {
+.main__image-wrapper:hover .main__image,
+.main__image-wrapper:focus .main__image {
 	-webkit-filter: brightness(50%);
 	        filter: brightness(50%);
 }
@@ -1024,7 +1037,8 @@ main {
 	background-position: right 15px bottom 15px;
 }
 
-.projects__item:hover .projects__item-description {
+.projects__item:hover .projects__item-description,
+.projects__item:focus .projects__item-description {
 	display: block;
 }
 
