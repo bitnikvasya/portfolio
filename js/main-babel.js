@@ -92,6 +92,7 @@ try {
     var itemDescription = projectsItem.querySelector('.projects__item-description');
 
     projectsItem.onclick = function (event) {
+      event.preventDefault();
       event.stopPropagation();
       clearSection();
       itemDescription.classList.toggle('projects__item-description--show');
