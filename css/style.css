@@ -491,7 +491,7 @@ a:hover {
 	border: none;
 	background: transparent;
 	cursor: pointer;
-	/*outline: none;*/
+	outline: none;
 }
 
 .navigation__toggle--open:before {
@@ -506,7 +506,8 @@ a:hover {
 	        box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
 }
 
-.navigation__toggle--open:hover:before {
+.navigation__toggle--open:hover:before,
+.navigation__toggle--open:focus:before{
 	background-color: #FFAA00;
 	-webkit-box-shadow: 0 10px 0 0 #FFAA00, 0 20px 0 0 #FFAA00;
 	        box-shadow: 0 10px 0 0 #FFAA00, 0 20px 0 0 #FFAA00;
@@ -589,10 +590,12 @@ a:hover {
 .navigation__list-item a {
 	text-decoration: none;
 	color: #000000;
+	outline: none;
 }
 
 .navigation a.active,
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:focus {
     color: #FFAA00;
 }
 
