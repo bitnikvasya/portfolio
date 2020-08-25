@@ -1,3 +1,18 @@
+/*---FONTS---*/
+
+@font-face {
+	font-family: "JB Mono";
+	src: url("../fonts/JetBrainsMono-Medium.woff2") format("woff2"), url("../fonts/JetBrainsMono-Medium.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+  }
+  @font-face {
+	font-family: "JB Mono";
+	src: url("../fonts/JetBrainsMono-ExtraBold.woff2") format("woff2"), url("../fonts/JetBrainsMono-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+  }
+
 /*---ANIMATION---*/
 
 @-webkit-keyframes bounce-in-top {
@@ -372,7 +387,7 @@
 
 body {
 	min-width: 320px;
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'JB Mono', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 32px;
@@ -563,7 +578,7 @@ a:hover {
 	padding: 20px 20px 20px 0;
 	margin: 0;
 	list-style: none;
-	/*font-size: 30px;*/
+	font-size: 26px;
 	line-height: 24px;
 	font-weight: 800;
 	text-transform: uppercase;
