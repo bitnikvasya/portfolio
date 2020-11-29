@@ -806,14 +806,14 @@ main {
 
 .section__wrapper {
 	background: url('../img/developer 2.svg') no-repeat;
-	background-position: right -150px bottom 0;
+	background-position: right -150px bottom 50px;
 	background-size: 1000px;
 	position: relative;
 }
 
 .circle {
 	position: absolute;
-	bottom: 620px;
+	bottom: 670px;
 	right: 250px;
 	-webkit-transform: translate(-50%, 50%);
 	    -ms-transform: translate(-50%, 50%);
