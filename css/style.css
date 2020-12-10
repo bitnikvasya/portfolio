@@ -847,6 +847,7 @@ main {
 
 .about__button:hover {
 	background: #FFAA00;
+	color: #000000;
 }
 
 @media (max-width: 1199px) {
