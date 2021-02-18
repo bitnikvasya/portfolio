@@ -1,162 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Василий Яковенко — сайт-портфолио</title>
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link rel="preload" href="fonts/JetBrainsMono-Medium.woff2" as="font" crossorigin="anonymous">
-      <link rel="preload" href="fonts/JetBrainsMono-ExtraBold.woff2" as="font" crossorigin="anonymous">
-      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-      <script src="https://kit.fontawesome.com/dfe9db6a8b.js" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-   </head>
-   <body id="main">
-      <header class="header">
-         <nav class="navigation">
-            <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="navigation__list navigation__list--closed">
-               <li class="navigation__list-item"><a href="#about">Обо&nbsp;мне</a></li>
-               <li class="navigation__list-item"><a href="#skills">Навыки и&nbsp;технологии</a></li>
-               <li class="navigation__list-item"><a href="#projects">Проекты</a></li>
-               <li class="navigation__list-item"><a href="#contacts">Контакты</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <title>Василий Яковенко — сайт-портфолио</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="fonts/JetBrainsMono-Medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/JetBrainsMono-ExtraBold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dfe9db6a8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body id="main">
+    <header class="header">
+      <nav class="navigation">
+        <button
+          class="navigation__toggle navigation__toggle--open"
+          type="button"
+        >
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list navigation__list--closed">
+          <li class="navigation__list-item">
+            <a href="#about">Обо&nbsp;мне</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#skills">Навыки и&nbsp;технологии</a>
+          </li>
+          <li class="navigation__list-item"><a href="#projects">Проекты</a></li>
+          <li class="navigation__list-item">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main section">
+        <h1 class="main__title">
+          <span>&lt;b&gt;</span>Привет<span>&lt;/b&gt;</span><br /><span
+            >Я Василий Яковенко,</span
+          ><br />фронтенд-разработчик
+        </h1>
+        <a
+          class="main__image-wrapper"
+          href="https://t.me/Vasily_Ya"
+          target="_blank"
+        >
+          <img
+            class="main__image"
+            src="img/main.png"
+            width="300"
+            height="300"
+            alt="Василий Яковенко"
+          />
+        </a>
+      </section>
+      <div class="section__wrapper">
+        <div class="circle"></div>
+        <section class="section about" id="about">
+          <h2 class="about__title section__title">&lt;обо мне&gt;</h2>
+          <p class="about__text">
+            38 лет, женат, живу в Ростове-на-Дону. За плечами два высших
+            образования (экономическое и юридическое) и десятилетний стаж в
+            банковской сфере. Пару лет назад решил сменить профессию, уйти в IT.
+            Успешно прошел интенсивные курсы профессионального HTML, CSS и
+            JavaScript от
+            <a href="https://htmlacademy.ru/" target="_blank">HTML academy</a>.
+            Сейчас работаю фронтенд-разработчиком, параллельно изучаю
+            JavaScript, React, Vue и другие технологии, практикуюсь в верстке.
+          </p>
+          <p class="about__text">
+            Во фронтенде склонен к верстке и дизайну. Уделяю внимание
+            доступности и производительности сайтов. Мне интересно направление
+            веб-разработки, горю желанием развиваться в нем и совершенствовать
+            навыки. Порядочен, ответственен, пунктуален, креативен, внимателен к
+            деталям.
+          </p>
+          <a
+            class="about__button button"
+            href="https://hh.ru/resume/8b58bb4dff07abdee40039ed1f725074623150"
+            target="_blank"
+            >Резюме</a
+          >
+        </section>
+        <section class="section skills" id="skills">
+          <h2 class="skills__title section__title">
+            &lt;навыки и технологии&gt;
+          </h2>
+          <div class="skills__lists">
+            <ul class="skills__language-list">
+              <li class="skills__language-item">HTML</li>
+              <li class="skills__language-item">CSS</li>
+              <li class="skills__language-item">JavaScript</li>
             </ul>
-         </nav>
-      </header>
-      <main>
-         <section class="main section">
-            <h1 class="main__title"><span>&lt;b&gt;</span>Привет<span>&lt;/b&gt;</span><br><span>Я Василий Яковенко,</span><br>фронтенд-разработчик</h1>
-            <a class="main__image-wrapper" href="https://t.me/Vasily_Ya" target="_blank">
-               <img class="main__image" src="img/main.png" width="300" height="300" alt="Василий Яковенко">
+            <ul class="skills__tehnology-list">
+              <li class="skills__tehnology-item">React/Next.js</li>
+              <li class="skills__tehnology-item">Less/Sass/PostCSS</li>
+              <li class="skills__tehnology-item">Webpack/Gulp</li>
+              <li class="skills__tehnology-item">Git/GitHub/GitLab</li>
+              <li class="skills__tehnology-item">Wordpress/Bitrix</li>
+              <li class="skills__tehnology-item">Figma/Photoshop/Zeplin</li>
+            </ul>
+            <ul class="skills__skills-list">
+              <li class="skills__skills-item">методология БЭМ</li>
+              <li class="skills__skills-item">
+                семантическая и доступная верстка
+              </li>
+              <li class="skills__skills-item">
+                адаптивная и резиновая кроссбраузерная верстка
+              </li>
+              <li class="skills__skills-item">
+                адаптивная и ретиновая графика
+              </li>
+              <li class="skills__skills-item">верстка email-писем</li>
+              <li class="skills__skills-item">pixel perfect</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="section projects" id="projects">
+        <h2 class="projects__title section__title">&lt;проекты&gt;</h2>
+        <div class="projects__wrapper">
+          <div class="projects__wrapper-left">
+            <a
+              class="projects__item"
+              href="https://packedmess.github.io/pereezd/"
+              target="_blank"
+            >
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/pereezd-2.jpg" />
+                <img src="img/pereezd.jpg" alt="Домашний переезд" />
+              </picture>
+              <div class="projects__item-description">
+                <h3>Домашний переезд</h3>
+                <p>корпоративный сайт</p>
+                <p>
+                  Адаптивная верстка. Реализованы страницы «Главная», «Прайс»,
+                  модальные окна по клику на «Обратная связь», «Оставить
+                  заявку».
+                </p>
+              </div>
             </a>
-         </section>
-         <div class="section__wrapper">
-            <div class="circle"></div>
-            <section class="section about" id="about" >
-               <h2 class="about__title section__title">&lt;обо мне&gt;</h2>
-               <p class="about__text">38 лет, женат, живу в Ростове-на-Дону. За плечами два высших образования (экономическое и юридическое) и десятилетний стаж в банковской сфере. Пару лет назад решил сменить профессию, уйти в IT. Успешно прошел интенсивные курсы профессионального HTML, CSS и JavaScript от <a href="https://htmlacademy.ru/" target="_blank">HTML academy</a>. Сейчас работаю фронтенд-разработчиком, параллельно изучаю JavaScript, React, Vue и другие технологии, практикуюсь в верстке.</p>
-               <p class="about__text">Во фронтенде склонен к верстке и дизайну. Уделяю внимание доступности и производительности сайтов. Мне интересно направление веб-разработки, горю желанием развиваться в нем и совершенствовать навыки. Порядочен, ответственен, пунктуален, креативен, внимателен к деталям.</p>
-               <a class="about__button button" href="https://hh.ru/resume/8b58bb4dff07abdee40039ed1f725074623150" target="_blank">Резюме</a>
-            </section>
-            <section class="section skills" id="skills">
-               <h2 class="skills__title section__title">&lt;навыки и технологии&gt;</h2>
-               <div class="skills__lists">
-                  <ul class="skills__language-list">
-                     <li class="skills__language-item">HTML</li>
-                     <li class="skills__language-item">CSS</li>
-                     <li class="skills__language-item">JavaScript</li>
-                  </ul>
-                  <ul class="skills__tehnology-list">
-                     <li class="skills__tehnology-item">React</li>
-                     <li class="skills__tehnology-item">Less/Sass/PostCSS</li>
-                     <li class="skills__tehnology-item">Webpack/Gulp</li>
-                     <li class="skills__tehnology-item">Git/GitHub/GitLab</li>
-                     <li class="skills__tehnology-item">Wordpress/Bitrix</li>
-                     <li class="skills__tehnology-item">Figma/Photoshop/Zeplin</li>
-                  </ul>
-                  <ul class="skills__skills-list">
-                     <li class="skills__skills-item">методология БЭМ</li>
-                     <li class="skills__skills-item">семантическая и доступная верстка</li>
-                     <li class="skills__skills-item">адаптивная и резиновая кроссбраузерная верстка</li>
-                     <li class="skills__skills-item">адаптивная и ретиновая графика</li>
-                     <li class="skills__skills-item">верстка email-писем</li>
-                     <li class="skills__skills-item">pixel perfect</li>
-                  </ul>
-               </div>
-            </section>
-         </div>
-         <section class="section projects" id="projects">
-            <h2 class="projects__title section__title">&lt;проекты&gt;</h2>
-            <div class="projects__wrapper">
-               <div class="projects__wrapper-left">
-                  <a class="projects__item" href="https://packedmess.github.io/pereezd/" target="_blank">
-                     <picture>
-                        <source media="(max-width: 767px)" srcset="img/pereezd-2.jpg">
-                        <img src="img/pereezd.jpg" alt="Домашний переезд">
-                     </picture>
-                     <div class="projects__item-description">
-                        <h3>Домашний переезд</h3>
-                        <p>корпоративный сайт</p>
-                        <p>Адаптивная верстка. Реализованы страницы «Главная», «Прайс», модальные окна по клику на «Обратная связь», «Оставить заявку».</p>
-                     </div>
-                  </a>
-                  <a class="projects__item" href="https://koround.ru/catalog/search/?q=%D0%9F%D0%B8%D0%BB%D0%B0&s=" target="_blank">
-                     <picture>
-                        <source media="(max-width: 1199px)" srcset="img/koround-2.jpg">
-                        <img src="img/koround.jpg" alt="Koround">
-                     </picture>
-                     <div class="projects__item-description">
-                        <h3>Корунд</h3>
-                        <p>интернет-магазин</p>
-                        <p>Страница результатов поиска с фильтром, сортировкой, видом отображения и пагинацией. Реализовано на React.</p>
-                     </div>
-                  </a>
-                  <a class="projects__item" href="https://packedmess.github.io/mishka/" target="_blank">
-                     <picture>
-                        <source media="(max-width: 1199px)" srcset="img/mishka-2.jpg">
-                        <img src="img/mishka.jpg" alt="Mishka">
-                     </picture>
-                     <div class="projects__item-description">
-                        <h3>Mishka</h3>
-                        <p>интернет-магазин</p>
-                        <p>Адаптивная верстка. Реализованы страницы «Главная», «Каталог товаров», «Вязание на заказ», модальное окно по клику на «Заказать», иконку «Корзина».</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="projects__wrapper-right">
-                  <a class="projects__item" href="https://naturalserbia.ru/" target="_blank">
-                     <picture>
-                        <source media="(max-width: 1199px)" srcset="img/natural-serbia-2.jpg">
-                        <img src="img/natural-serbia.jpg" alt="Natural Serbia">
-                     </picture>
-                     <div class="projects__item-description">
-                        <h3>Natural Serbia</h3>
-                        <p>интернет-магазин</p>
-                        <p>Доработка Wordpress-темы, контент, API.</p>
-                     </div>
-                  </a>
-                  <a class="projects__item" href="https://packedmess.github.io/tasker/" target="_blank">
-                     <picture>
-                        <img src="img/tasker.jpg" alt="Tasker">
-                     </picture>
-                     <div class="projects__item-description">
-                        <h3>Tasker</h3>
-                        <p>веб-приложение</p>
-                        <p>Планировщик задач. Реализовано на React.</p>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </section>
-         <section class="section contacts" id="contacts">
-            <h2 class="contacts__title section__title">&lt;контакты&gt;</h2>
-            <p class="contacts__text">Свяжитесь со мной, заполнив форму ниже, или другим удобным способом.</p>
-            <div class="contacts__wrapper">
-               <form class="contacts__form" method="post">
-                  <label for="name">Ваше имя</label>
-                  <input class="contacts__form-input" id="name" type="text" name="name" value="" placeholder="Имя" required>
-                  <label for="email">Ваш e-mail</label>
-                  <input class="contacts__form-input" id="email" type="email" name="email" value="" placeholder="email@example.com" required>
-                  <label for="text">Текст</label>
-                  <textarea class="contacts__form-input" id="text" name="text" placeholder="Напишите здесь ваш вопрос, пожелание, предложение, что угодно" required></textarea>
-                  <button class="contacts__form-button button" type="submit">Отправить</button>
-                  <p class="contacts__form-success">Сообщение отправлено. Я отвечу так быстро, как смогу.
-                        <button class="contacts__form-success-toggle" type="button"><span class="visually-hidden">Закрыть</span></button>
-                  </p>
-                  <small>Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</small>
-               </form>
-               <div class="contacts__icons">
-                  <a href="mailto:packedmess@gmail.com"><i class="fas fa-envelope"></i></a>
-                  <a href="https://www.facebook.com/vasily.yakovenko.1/" target="_blank"><i class="fab fa-facebook"></i></a>
-                  <a href="https://t.me/Vasily_Ya" target="_blank"><i class="fab fa-telegram"></i></a>
-                  <a href="https://github.com/packedmess" target="_blank"><i class="fab fa-github"></i></a>
-               </div>
-            </div>
-         </section>
-         <a class="up-button" href="#main">Наверх</a>
-      </main>
-      <script src="js/jquery.js"></script>
-      <script src="js/main-babel.js"></script>
-   </body>
+            <a
+              class="projects__item"
+              href="https://koround.ru/catalog/search/?q=%D0%9F%D0%B8%D0%BB%D0%B0&s="
+              target="_blank"
+            >
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="img/koround-2.jpg"
+                />
+                <img src="img/koround.jpg" alt="Koround" />
+              </picture>
+              <div class="projects__item-description">
+                <h3>Корунд</h3>
+                <p>интернет-магазин</p>
+                <p>
+                  Страница результатов поиска с фильтром, сортировкой, видом
+                  отображения и пагинацией. Реализовано на React.
+                </p>
+              </div>
+            </a>
+            <a
+              class="projects__item"
+              href="https://packedmess.github.io/mishka/"
+              target="_blank"
+            >
+              <picture>
+                <source media="(max-width: 1199px)" srcset="img/mishka-2.jpg" />
+                <img src="img/mishka.jpg" alt="Mishka" />
+              </picture>
+              <div class="projects__item-description">
+                <h3>Mishka</h3>
+                <p>интернет-магазин</p>
+                <p>
+                  Адаптивная верстка. Реализованы страницы «Главная», «Каталог
+                  товаров», «Вязание на заказ», модальное окно по клику на
+                  «Заказать», иконку «Корзина».
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="projects__wrapper-right">
+            <a
+              class="projects__item"
+              href="https://naturalserbia.ru/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="img/natural-serbia-2.jpg"
+                />
+                <img src="img/natural-serbia.jpg" alt="Natural Serbia" />
+              </picture>
+              <div class="projects__item-description">
+                <h3>Natural Serbia</h3>
+                <p>интернет-магазин</p>
+                <p>Доработка Wordpress-темы, контент, API.</p>
+              </div>
+            </a>
+            <a
+              class="projects__item"
+              href="https://packedmess.github.io/tasker/"
+              target="_blank"
+            >
+              <picture>
+                <img src="img/tasker.jpg" alt="Tasker" />
+              </picture>
+              <div class="projects__item-description">
+                <h3>Tasker</h3>
+                <p>веб-приложение</p>
+                <p>Планировщик задач. Реализовано на React.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section contacts" id="contacts">
+        <h2 class="contacts__title section__title">&lt;контакты&gt;</h2>
+        <p class="contacts__text">
+          Свяжитесь со мной, заполнив форму ниже, или другим удобным способом.
+        </p>
+        <div class="contacts__wrapper">
+          <form class="contacts__form" method="post">
+            <label for="name">Ваше имя</label>
+            <input
+              class="contacts__form-input"
+              id="name"
+              type="text"
+              name="name"
+              value=""
+              placeholder="Имя"
+              required
+            />
+            <label for="email">Ваш e-mail</label>
+            <input
+              class="contacts__form-input"
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="email@example.com"
+              required
+            />
+            <label for="text">Текст</label>
+            <textarea
+              class="contacts__form-input"
+              id="text"
+              name="text"
+              placeholder="Напишите здесь ваш вопрос, пожелание, предложение, что угодно"
+              required
+            ></textarea>
+            <button class="contacts__form-button button" type="submit">
+              Отправить
+            </button>
+            <p class="contacts__form-success">
+              Сообщение отправлено. Я отвечу так быстро, как смогу.
+              <button class="contacts__form-success-toggle" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </p>
+            <small
+              >Нажимая на кнопку «Отправить», вы даете согласие на обработку
+              своих персональных данных.</small
+            >
+          </form>
+          <div class="contacts__icons">
+            <a href="mailto:packedmess@gmail.com" aria-label="email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/vasily.yakovenko.1/"
+              aria-label="facebook"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://t.me/Vasily_Ya"
+              aria-label="telegram"
+              target="_blank"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a
+              href="https://github.com/packedmess"
+              aria-label="github"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <a class="up-button" href="#main">Наверх</a>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/main-babel.js"></script>
+  </body>
 </html>
